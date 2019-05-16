@@ -7,5 +7,7 @@ module.exports.mapOrigamiToClient = (origami) => {
       userId: origami.userId,
       deleted: origami.deleted,
       date: origami.date,
+      author: origami.author,
+      category: origami.category
   }
 };

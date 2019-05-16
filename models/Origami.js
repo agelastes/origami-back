@@ -32,6 +32,13 @@ const origamiSchema = new Schema({
         type: Date,
         default: Date.now,
     },
+    author: {
+        type: String,
+        default: "Аноним"
+    },
+    category: {
+        type: String
+    }
 });
 
 module.exports = mongoose.model('origami', origamiSchema);

@@ -18,6 +18,8 @@ module.exports.create = async function (request, response) {
             description: request.body.description,
             userId: request.user.id,
             images: request.body.images ? request.body.images : undefined,
+            author: request.body.author,
+            category: request.body.category
         });
         try {
             const origami = await newOrigami.save();
